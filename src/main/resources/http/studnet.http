@@ -1,0 +1,30 @@
+### Get student list --bu zapros aslida bizga malumotlarni get qilib korish uchun ishlatiladi.
+GET localhost:8080/student/all
+
+
+### POST student list -- bu biz qandaydir malumotni kreate yani qo'shish uchun ishlatamiz.
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "name": "Sardor",
+  "surname": "Shoyqulov"
+}
+
+### PUT student list by id -- bu zapros kopincha bizga malumotlarni update yani ozgartirish uchun kerak bo'ladi.
+PUT localhost:8080/student/update/502ab7a2-e5be-4365-bcec-84bb024f7b05
+Content-Type: application/json
+
+{
+  "name": "Aziz",
+  "surname": "Norqulov"
+}
+
+### DELETE student by id -- bu zapros bizga hohlagan id imizdagi studentni ochirishga yordam beradi.
+DELETE localhost:8080/student/delete/b5a4db00-c494-477b-a825-32f44d20d642
+
+
+
+
+
+
